@@ -26,7 +26,14 @@
 - [ ] 画出 ViT 完整前向流程图
 - [ ] 理解表 1（ViT variants: Base / Large / Huge 的参数配置）
 
-### 2. ViT 代码速览
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 滑动窗口 ×2 题
+- 推荐今日题目：Longest Substring Without Repeating Characters (LC 3), Minimum Window Substring (LC 76)
+
+---
+
+### 3. ViT 代码速览
 
 用 `timm` / `transformers` 加载 ViT，打印各模块的 shape：
 ```python
@@ -38,7 +45,7 @@ from transformers import ViTModel, ViTImageProcessor
 
 ## 下午（14:00 - 17:00）：CLIP 精读
 
-### 3. CLIP 论文精读
+### 4. CLIP 论文精读
 
 **论文**：[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
 
@@ -55,7 +62,7 @@ from transformers import ViTModel, ViTImageProcessor
 - [ ] Zero-shot transfer 的能力来源
 - [ ] Data scale：400M image-text pairs 从互联网爬取
 
-### 4. CLIP 代码实战（1h）
+### 5. CLIP 代码实战（1h）
 
 ```python
 import torch
@@ -71,11 +78,12 @@ model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 
 ---
 
-## 晚间（19:00 - 21:00）：对比学习深入
+## 晚间（19:00 - 21:00）：对比学习深入 + LeetCode
 
 - [ ] 理解 contrastive loss 的 batch 内负样本机制
 - [ ] 阅读李沐 [CLIP 论文逐段精读](https://www.bilibili.com/video/BV1SL4y1s7LQ/)（1h）
 - [ ] **面试模拟**：口述 "CLIP 是怎么训练的？zero-shot 分类是怎么做的？"
+- [ ] LeetCode ×1-2 题（哈希表专题开始）
 
 ---
 

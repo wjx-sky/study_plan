@@ -20,7 +20,14 @@
 - [ ] 理解 label smoothing 在 SigLIP 中的作用
 - [ ] **为什么 OpenVLA 选 SigLIP？** → 小 batch fine-tune 更稳定，且无需大 batch 的负样本对比
 
-### 2. 损失函数对比推导（必做）
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 哈希表/字符串 ×2 题
+- 推荐今日题目：Group Anagrams (LC 49), Longest Consecutive Sequence (LC 128)
+
+---
+
+### 3. 损失函数对比推导（必做）
 
 - [ ] 写出 CLIP InfoNCE Loss 的公式
 - [ ] 写出 SigLIP Sigmoid BCE Loss 的公式
@@ -30,7 +37,7 @@
 
 ## 下午（14:00 - 17:00）：Vision Encoder 选型实践
 
-### 3. 对比三种 Vision Encoder
+### 4. 对比三种 Vision Encoder
 
 用 `transformers` 和 `timm` 加载并对比：
 
@@ -46,7 +53,7 @@
   - SigLIP 捕获语义（语言对齐）
   - DinoV2 捕获空间结构（抓取/操作需要）
 
-### 4. OpenCLIP 快速上手（1h）
+### 5. OpenCLIP 快速上手（1h）
 
 ```python
 import open_clip
@@ -60,13 +67,14 @@ model, _, preprocess = open_clip.create_model_and_transforms(
 
 ---
 
-## 晚间（19:00 - 21:00）：复习 + 面试准备
+## 晚间（19:00 - 21:00）：复习 + 面试准备 + LeetCode
 
 - [ ] 写一篇简短的技术对比笔记：CLIP vs SigLIP vs DinoV2
 - [ ] **面试题准备**：
   - "CLIP 的局限性是什么？SigLIP 怎么改进的？"
   - "为什么 VLA 需要好的 visual encoder？只用 CLIP 够吗？"
   - "multi-resolution / dynamic resolution 在 VLM 中怎么实现？"
+- [ ] LeetCode ×1-2 题（继续哈希表专题）
 
 ---
 

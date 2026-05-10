@@ -38,6 +38,13 @@ Attention(Q, K, V) = softmax(QK^T / √d_k) V
 
 ---
 
+## 上午补充（11:30 - 12:00）：LeetCode
+
+- [ ] 数组/字符串专题 ×2 题（从 Hot 100 中选）
+- 推荐今日题目：Two Sum (LC 1), Valid Parentheses (LC 20)
+
+---
+
 ## 下午（14:00 - 17:00）：视频学习 + 代码
 
 ### 3. Karpathy "Let's build GPT from scratch"（前半部分）
@@ -74,11 +81,12 @@ class SingleHeadAttention(nn.Module):
 
 ---
 
-## 晚间（19:00 - 21:00）：笔记整理
+## 晚间（19:00 - 21:00）：笔记整理 + LeetCode
 
 - [ ] 整理今日学习笔记（Notion / Markdown）
 - [ ] 把 Attention 公式推导流程默写一遍
 - [ ] 列出今天没完全理解的 3 个点，作为明天重点关注
+- [ ] LeetCode ×1-2 题
 
 ---
 

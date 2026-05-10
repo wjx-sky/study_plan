@@ -17,7 +17,12 @@
 - [ ] 残差连接
 - [ ] 完整的 Transformer Block 堆叠
 
-### 2. The Annotated Transformer 对照阅读（1h）
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 数组/双指针 ×2 题
+- 推荐今日题目：Container With Most Water (LC 11), 3Sum (LC 15)
+
+### 3. The Annotated Transformer 对照阅读（1h）
 
 访问：https://nlp.seas.harvard.edu/annotated-transformer/
 
@@ -48,11 +53,12 @@ class TransformerBlock(nn.Module):     # MHA + FFN + LayerNorm + Residual
 
 ---
 
-## 晚间（19:00 - 21:00）：复习 + 输出
+## 晚间（19:00 - 21:00）：复习 + 输出 + LeetCode
 
 - [ ] 画出完整 Transformer Block 的结构图（标注每个操作的 shape 变化）
 - [ ] 回答面试题：**"为什么 Transformer 可以并行训练但 RNN 不行？"**
 - [ ] 阅读 [LLaMA 2 架构图](https://github.com/meta-llama/llama)，对比与原始 Transformer 的区别
+- [ ] LeetCode ×1-2 题（继续数组/双指针专题）
 
 ---
 

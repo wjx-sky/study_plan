@@ -27,7 +27,14 @@
   - Stage 2: Visual Instruction Tuning（训 projector + LLM）
 - [ ] Data：CC3M 595K（Stage 1），LLaVA-Instruct-665K（Stage 2）
 
-### 2. 画出 LLaVA 前向图（1h）
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 链表专题 ×2 题
+- 推荐今日题目：Reverse Linked List (LC 206), Merge Two Sorted Lists (LC 21)
+
+---
+
+### 3. 画出 LLaVA 前向图（1h）
 
 必须能徒手画出：
 ```
@@ -51,7 +58,7 @@
 
 ## 下午（14:00 - 17:00）：代码深挖
 
-### 3. LLaVA 代码精读（2h）
+### 4. LLaVA 代码精读（2h）
 
 **仓库**：[LLaVA](https://github.com/haotian-liu/LLaVA) 或 transformers 中的 `LlavaForConditionalGeneration`
 
@@ -73,7 +80,7 @@ from transformers import LlavaForConditionalGeneration
 # → outputs: (B, 576 + L, 4096)        # 经过 LLM
 ```
 
-### 4. 动手跑 LLaVA 推理（1h）
+### 5. 动手跑 LLaVA 推理（1h）
 
 - [ ] 用 transformers 跑 LLaVA 1.5 对一个场景图 + 问题的推理
 - [ ] 修改 projector 的结构（加一层 → 3 层 MLP），观察输出是否变化
@@ -81,11 +88,12 @@ from transformers import LlavaForConditionalGeneration
 
 ---
 
-## 晚间（19:00 - 21:00）：VLM 全景
+## 晚间（19:00 - 21:00）：VLM 全景 + LeetCode
 
 - [ ] 快速浏览 BLIP-2 的 Q-Former 设计（与 LLaVA projector 的对比）
 - [ ] 理解 VLM 的 evaluation benchmark：MMBench, MME, SEED-Bench, MMMU
 - [ ] **思考题**：如果把 LLaVA 的 LLM 输出从 text 改成 action token，是不是就是一个简单的 VLA？
+- [ ] LeetCode ×1-2 题（继续链表专题，快慢指针）
 
 ---
 

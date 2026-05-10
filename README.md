@@ -1,20 +1,26 @@
 # 具身智能 VLA + 世界模型 学习路线图
 
-## 适用背景
+## 个人背景
 
-Python / C++ 编程熟练，熟悉 MLP / CNN / RNN / GRU / LSTM 的原理与 PyTorch 实现，了解 ACT、Diffusion Policy、A2C 等 RL/IL 算法，目标是从 VLA 算法研究逐步转向世界模型研究。
+- **编程**：Python / C++ 熟练，PyTorch 熟练
+- **ML/DL**：熟悉 MLP / CNN / RNN / GRU / LSTM 的原理与实现
+- **RL/IL**：了解 ACT、Diffusion Policy、A2C 等算法
+- **项目经历**：RC 竞赛（轨迹预测方向），独立设计并实现 GRU + 物理模型 hybrid 方案预测排球飞行轨迹，通过 ROS2 部署到真实机器人系统
+  - GRU 预测物理参数 → 非线性拟合反推初速度与初始位置
+  - 独立设计完整 pipeline（建模 → 训练 → ROS2 通信 → 真机部署）
+  - 理解 learning + model-based optimization hybrid 范式
 
 ## 你目前的知识盲区（基于你的背景推断）
 
 | 已掌握 | 缺失/薄弱 |
 |--------|-----------|
-| CNN, RNN, LSTM, GRU | **Transformer**（VLA 的绝对基础） |
-| ACT, Diffusion Policy | **VLM 基础**（CLIP, BLIP-2, LLaVA, Qwen-VL） |
+| CNN, RNN, LSTM, GRU（扎实） | **Transformer**（VLA 的绝对基础） |
+| ACT, Diffusion Policy 基本了解 | **VLM 基础**（CLIP, SigLIP, LLaVA, Qwen-VL） |
 | A2C, 基本 RL/IL | **LLM 基础**（预训练/SFT/RLHF 管线认知即可） |
 | PyTorch 熟练 | **VLA 架构全貌**（RT-2, OpenVLA, Octo, π0 等） |
-| 单一 modality 经验 | **多模态对齐与融合**（visual tokenization, action tokenization） |
-| — | **具身数据生态**（Open X-Embodiment, 数据混合策略） |
-| — | **世界模型**（视频生成 + 具身规划） |
+| ROS2 部署 + 真机经验 | **多模态对齐与融合**（visual tokenization, action tokenization） |
+| 时序建模 + 物理先验注入 | **具身数据生态**（Open X-Embodiment, 数据混合策略） |
+| learning + model-based hybrid | **世界模型**（视频生成 + 具身规划） |
 
 ---
 
@@ -308,10 +314,31 @@ Pipeline：
 
 ```
 09:00-11:00  论文精读（做笔记，写 summary）
-11:00-12:00  关键论文的代码阅读
+11:00-11:30  关键论文的代码阅读
+11:30-12:00  LeetCode ×1-2 题（每天固定，不跳过）
 14:00-17:00  写代码 / 跑实验
-19:00-21:00  整理笔记 + 输出（博客/Notion）
+19:00-20:30  整理笔记 + 输出（博客/Notion）
+20:30-21:00  LeetCode ×1-2 题
 ```
+
+### LeetCode 路线（2 个月，目标 150 题）
+
+与大厂实习面试直接相关，每天 1 小时（早上 30min + 晚上 30min），日均 2-4 题。
+
+**刷题顺序**（按面试出现频率从高到低）：
+
+| 阶段 | 专题 | 题量 | 时间 |
+|------|------|------|------|
+| 第 1-2 周 | 数组/字符串/双指针/滑动窗口 | ~40 题 | 基础必刷 |
+| 第 3-4 周 | 哈希表/栈/队列/链表 | ~35 题 | 高频 |
+| 第 5-6 周 | 树/递归/DFS/BFS | ~35 题 | 高频 |
+| 第 7-8 周 | DP/贪心/回溯/图 | ~40 题 | 拉开差距 |
+
+**刷题原则**：
+- Easy 5 min 内出思路 → 跳过，只刷 Medium + 少量 Hard
+- 每道题先自己想 10 min，没思路直接看题解，理解后手写一遍
+- 同一题 3 天后重做，做不出来说明没真懂
+- 优先刷 [LeetCode Hot 100](https://leetcode.cn/problem-list/2cktkvj/) 和 [剑指 Offer](https://leetcode.cn/problem-list/xb9nqhhg/)
 
 ### 论文阅读方法（三遍法）
 

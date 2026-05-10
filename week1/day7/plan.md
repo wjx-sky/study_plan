@@ -25,7 +25,14 @@
 - [ ] 所以 VLA 训练 ≈ VLM 的 SFT 阶段，只是输出从 text 变成了 action tokens
 - [ ] RLHF 在 VLA 中的对应是 RL fine-tuning（用真实交互奖励信号），但目前还在早期
 
-### 2. Tokenizer 与 Chat Template（1h）
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 树/递归 ×2 题
+- 推荐今日题目：Maximum Depth of Binary Tree (LC 104), Invert Binary Tree (LC 226)
+
+---
+
+### 3. Tokenizer 与 Chat Template（1h）
 
 - [ ] 理解 BPE tokenizer 的原理（subword tokenization）
 - [ ] 理解 Chat Template 的作用：
@@ -39,7 +46,7 @@
   - 方法 2：复用已有 tokens（用特殊 token 表示 action 值）
   - OpenVLA 用方法 1：定义 `256 * action_dim` 个 action bins 作为特殊 token
 
-### 3. LLaMA 架构速览（0.5h）
+### 4. LLaMA 架构速览（0.5h）
 
 - [ ] 阅读 [LLaMA 论文](https://arxiv.org/abs/2302.13971) 的关键改进：
   - Pre-Norm（RMSNorm）
@@ -51,7 +58,7 @@
 
 ## 下午（14:00 - 17:00）：第一周知识图谱
 
-### 4. 绘制 VLA 前置知识图谱（2h）
+### 5. 绘制 VLA 前置知识图谱（2h）
 
 用一张大图整理本周学到的所有概念之间的关系：
 
@@ -95,7 +102,7 @@
               └────────────────┘
 ```
 
-### 5. 查漏补缺（1h）
+### 6. 查漏补缺（1h）
 
 - [ ] 重读第一周每天的 summary.md，看"尚未解决的问题"是否已解决
 - [ ] 快速过一遍 README 中第一周的 Checklist，确认无遗漏
@@ -103,9 +110,9 @@
 
 ---
 
-## 晚间（19:00 - 21:00）：第一周总结文档
+## 晚间（19:00 - 21:00）：第一周总结 + LeetCode
 
-### 6. 写"第一周学习总结"（2h）
+### 7. 写"第一周学习总结"（2h）
 
 用一篇完整的技术文档总结本周学习，建议包含：
 
@@ -120,8 +127,9 @@
   - VLM projector 的作用
   - LLM 训练三阶段
   - Action tokenization 的基本思路
+- [ ] LeetCode ×1-2 题（树/递归继续）
 
-### 7. 二周预习
+### 8. 二周预习
 
 - [ ] 下载 [RT-2 论文](https://arxiv.org/abs/2307.15818)，快速浏览 Abstract + Figure 1-3
 - [ ] Clone [OpenVLA 仓库](https://github.com/openvla/openvla)，确认环境能跑通

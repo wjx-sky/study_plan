@@ -22,7 +22,14 @@
   - 开源、性能强、动态分辨率适合机器人场景（需要看清操作物体）
   - 支持多分辨率输入 → 适合操作任务中的细小物体识别
 
-### 2. Qwen2-VL 代码速览
+### 2. LeetCode（11:30 - 12:00）
+
+- [ ] 栈/队列专题 ×2 题
+- 推荐今日题目：Min Stack (LC 155), Largest Rectangle in Histogram (LC 84)
+
+---
+
+### 3. Qwen2-VL 代码速览
 
 用 `transformers` 加载：
 ```python
@@ -37,7 +44,7 @@ from transformers import Qwen2VLForConditionalGeneration
 
 ## 下午（14:00 - 17:00）：VLM 架构对比
 
-### 3. 三/四种 VLM 架构横向对比
+### 4. 三/四种 VLM 架构横向对比
 
 | 特性 | LLaVA 1.5 | Qwen2-VL | InternVL2 | Phi-Vision |
 |------|-----------|----------|-----------|------------|
@@ -51,7 +58,7 @@ from transformers import Qwen2VLForConditionalGeneration
   - Self-attention fusion（LLaVA 方式）：visual token 和 text token 一起做 self-attention
   - Cross-attention fusion（Flamingo/Phi-Vision 方式）：text token 通过 cross-attn 查询 visual feature
 
-### 4. 动手代码练习
+### 5. 动手代码练习
 
 - [ ] 跑通 Qwen2-VL 推理
 - [ ] 测试同一张图在 Qwen2-VL 和 LLaVA 上的效果差异
@@ -59,7 +66,7 @@ from transformers import Qwen2VLForConditionalGeneration
 
 ---
 
-## 晚间（19:00 - 21:00）：总结 + 预备 VLA
+## 晚间（19:00 - 21:00）：总结 + 预备 VLA + LeetCode
 
 - [ ] 写一篇笔记：**"VLA 对 VLM backbone 的需求分析"**
   - 需要强 spatial reasoning（知道物体在哪）
@@ -68,6 +75,7 @@ from transformers import Qwen2VLForConditionalGeneration
   - 哪些 VLM 特性最匹配这些需求？
 
 - [ ] **预习**：快速浏览 [OpenVLA 论文](https://arxiv.org/abs/2406.09246) 的 Section 2-3（明天正式学 VLA 时你会感谢今晚的预习）
+- [ ] LeetCode ×1-2 题（树专题开始）
 
 ---
 
